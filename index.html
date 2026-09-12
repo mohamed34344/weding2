@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Wedding | Mohamed & Nada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader">
+      <div class="loader-content">
+        <span class="loader-heart">♥</span>
+        <p>Our Story</p>
+      </div>
+    </div>
+
+    <!-- ================= MUSIC ================= -->
+    <audio id="weddingMusic" loop>
+      <!-- CHANGE: حط ملف الموسيقى هنا -->
+      <source src="./sound2.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button class="music-btn" id="musicBtn">
+      <i class="fa-solid fa-music"></i>
+    </button>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="floating-hearts">
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+        <span>♥</span>
+      </div>
+
+      <div class="hero-content reveal">
+        <p class="small-title">WE ARE GETTING MARRIED</p>
+
+        <!-- CHANGE -->
+        <h1>
+          Mohamed
+          <span>&</span>
+          Nada
+        </h1>
+
+        <div class="hero-line"></div>
+
+        <!-- CHANGE -->
+        <p class="hero-date">3 . 10 . 2026</p>
+
+        <p class="hero-location">
+          <i class="fa-solid fa-location-dot"></i>
+          Grand Wedding Hall
+        </p>
+
+        <a href="#details" class="scroll-btn">
+          <span>Discover Our Story</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- ================= INTRO ================= -->
+    <section class="intro section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">TOGETHER FOREVER</span>
+
+          <h2>
+            Two souls,
+            <em>one story.</em>
+          </h2>
+
+          <div class="ornament">
+            <span></span>
+            <i class="fa-solid fa-heart"></i>
+            <span></span>
+          </div>
+
+          <p>
+            With hearts full of love and happiness, we invite you to celebrate
+            the beginning of our beautiful journey together.
+          </p>
+        </div>
+
+        <div class="couple-cards">
+          <div class="person-card reveal">
+            <!-- CHANGE IMAGE -->
+            <div class="person-image">
+              <img src="images/groom.jpg" alt="Groom" />
+
+              <div class="image-frame"></div>
+            </div>
+
+            <!-- CHANGE -->
+            <h3>Mohamed</h3>
+            <span>THE GROOM</span>
+          </div>
+
+          <div class="heart-divider">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="person-card reveal">
+            <!-- CHANGE IMAGE -->
+            <div class="person-image">
+              <img src="images/bride.jpg" alt="Bride" />
+
+              <div class="image-frame"></div>
+            </div>
+
+            <!-- CHANGE -->
+            <h3>Nada saed</h3>
+            <span>THE BRIDE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DETAILS ================= -->
+    <section class="details section" id="details">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <span class="eyebrow">SAVE THE DATE</span>
+
+          <h2>
+            Our special
+            <em>day</em>
+          </h2>
+
+          <div class="ornament">
+            <span></span>
+            <i class="fa-solid fa-heart"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="event-grid">
+          <div class="event-card reveal">
+            <div class="event-icon">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <h3>DATE</h3>
+
+            <!-- CHANGE -->
+            <p>Sunday</p>
+            <strong>3 Octobar 2026</strong>
+          </div>
+
+          <div class="event-card reveal">
+            <div class="event-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <h3>TIME</h3>
+
+            <p>Reception starts</p>
+            <strong>09:00 PM</strong>
+          </div>
+
+          <div class="event-card reveal">
+            <div class="event-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h3>VENUE</h3>
+
+            <!-- CHANGE -->
+            <p>Grand Wedding Hall</p>
+            <strong>Shebin El Kom, Menoufia</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COUNTDOWN ================= -->
+    <section class="countdown-section">
+      <div class="countdown-overlay"></div>
+
+      <div class="container">
+        <div class="countdown-content reveal">
+          <span class="eyebrow">COUNTING DOWN TO</span>
+
+          <h2>Our Big Day</h2>
+
+          <div class="countdown">
+            <div class="time-box">
+              <strong id="days">00</strong>
+              <span>DAYS</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-box">
+              <strong id="hours">00</strong>
+              <span>HOURS</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-box">
+              <strong id="minutes">00</strong>
+              <span>MINUTES</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-box">
+              <strong id="seconds">00</strong>
+              <span>SECONDS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section class="story section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">OUR JOURNEY</span>
+
+          <h2>
+            How our
+            <em>story began</em>
+          </h2>
+
+          <div class="ornament">
+            <span></span>
+            <i class="fa-solid fa-heart"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="timeline-content">
+              <span>2022</span>
+
+              <h3>The First Meeting</h3>
+
+              <p>
+                Sometimes the most beautiful stories begin with a simple hello.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="timeline-content">
+              <span>2024</span>
+
+              <h3>A New Chapter</h3>
+
+              <p>We started creating memories that would last a lifetime.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+
+            <div class="timeline-content">
+              <span>2026</span>
+
+              <h3>Forever Begins</h3>
+
+              <p>And now we are ready to begin our forever together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery-section section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">OUR MEMORIES</span>
+
+          <h2>
+            Moments we
+            <em>love</em>
+          </h2>
+
+          <div class="ornament">
+            <span></span>
+            <i class="fa-solid fa-heart"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <!-- CHANGE IMAGES -->
+
+          <div class="gallery-item large reveal">
+            <img src="images/photo1.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/photo2.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/photo3.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/photo4.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item large reveal">
+            <img src="images/photo5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOCATION ================= -->
+    <section class="location-section section">
+      <div class="container">
+        <div class="location-box reveal">
+          <div class="location-info">
+            <span class="eyebrow">JOIN US</span>
+
+            <h2>
+              Let's celebrate
+              <em>together</em>
+            </h2>
+
+            <p>Your presence will make our special day even more beautiful.</p>
+
+            <div class="venue-info">
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                  <strong>Grand Wedding Hall</strong>
+                  <span>Shebin El Kom, Menoufia</span>
+                </div>
+              </div>
+
+              <div>
+                <i class="fa-regular fa-clock"></i>
+
+                <div>
+                  <strong>08:00 PM</strong>
+                  <span>Sunday, December 20</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHANGE GOOGLE MAPS LINK -->
+            <a href="https://maps.google.com" target="_blank" class="map-btn">
+              <i class="fa-solid fa-location-arrow"></i>
+              Open Google Maps
+            </a>
+          </div>
+
+          <div class="map-placeholder">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>OUR VENUE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RSVP ================= -->
+    <section class="wishes-section section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">LEAVE A WISH</span>
+          <h2>Your words <em>mean a lot</em></h2>
+          <div class="ornament">
+            <span></span> <i class="fa-solid fa-heart"></i> <span></span>
+          </div>
+          <p>Leave a beautiful message for the bride and groom.</p>
+        </div>
+        <!-- COMMENT FORM -->
+        <form class="wish-form reveal" id="wishForm">
+          <div class="wish-input">
+            <label>Your Name</label>
+            <input
+              type="text"
+              id="wishName"
+              placeholder="Enter your name"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div class="wish-input">
+            <label>Your Message</label>
+            <textarea
+              id="wishMessage"
+              placeholder="Write your beautiful message..."
+              maxlength="250"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Your Wish <i class="fa-solid fa-heart"></i>
+          </button>
+        </form>
+        <!-- COMMENTS WILL APPEAR HERE -->
+        <div class="wishes-list" id="wishesList"></div>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-heart">♥</div>
+
+      <!-- CHANGE -->
+      <h2>Ahmed <span>&</span> Sara</h2>
+
+      <p>Made with love for our special day</p>
+
+      <div class="footer-line"></div>
+
+      <small> © 2026 Our Wedding </small>
+    </footer>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox">
+      <button class="close-lightbox" id="closeLightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <img id="lightboxImage" src="" alt="" />
+    </div>
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">
+      <i class="fa-solid fa-heart"></i>
+      <span>Thank you for your response ❤️</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
